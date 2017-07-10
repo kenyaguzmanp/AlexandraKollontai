@@ -139,36 +139,22 @@
 
     <script>
         $(document).ready(function () {
-
-            $("#titulo-1").hover(function () {
-                $("#texto-1").toggleClass("cuadro-mueve");
-            });
-            
-            $("#titulo-2").hover(function () {
-                $("#texto-2").toggleClass("cuadro-mueve");
-            });
-            
-            $("#titulo-3").hover(function () {
-                $("#texto-3").toggleClass("cuadro-mueve");
-            });
-            
-            $("#titulo-4").hover(function () {
-                $("#texto-4").toggleClass("cuadro-mueve");
-            });
-
-
             $("#titulo-1").on("click", function () {
                 $("#texto-1").fadeToggle("slow");
+                $("#texto-1").toggleClass("cuadro-mueve");
             });
 
             $("#titulo-2").on("click", function () {
                 $("#texto-2").fadeToggle("slow");
+                $("#texto-2").toggleClass("cuadro-mueve");
             });
             $("#titulo-3").on("click", function () {
                 $("#texto-3").fadeToggle("slow");
+                $("#texto-3").toggleClass("cuadro-mueve");
             });
             $("#titulo-4").on("click", function () {
                 $("#texto-4").fadeToggle("slow");
+                $("#texto-4").toggleClass("cuadro-mueve");
             });
 
             var randomNum = 1;
