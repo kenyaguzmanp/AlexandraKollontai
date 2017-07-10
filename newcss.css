@@ -1,0 +1,180 @@
+
+body{
+    text-align: center;
+    background-image: url(http://i66.tinypic.com/2hczx44.png);        
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: orange;
+
+}
+.col-center{
+    float: none;
+    margin: auto auto;
+}
+.contenido{
+    width: 43%;
+
+}
+
+
+@font-face {
+    font-family: Troika;
+    src: url(troika.otf);
+}
+
+@font-face {
+    font-family: amarurgt;
+    src: url(amarurgt.ttf);
+}
+
+.troika{
+    font-family: Troika;
+    font-size: 400%; 
+}
+
+.fuente{
+    font-family: amarurgt; 
+    font-family: 'Fjalla One', sans-serif; 
+    font-size: 3em;      
+}
+
+.titulo{
+    margin-top: 60px; 
+    margin-bottom: 20px;
+    font-size: 5em;     
+}
+
+
+.texto-cuadro-muestra{
+    display: block;    
+    opacity: 0;
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    transition: opacity 2s ease-in;
+
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.texto-out{
+    display: block;
+    opacity: 1;
+    -webkit-animation: fadeout 2s;
+    transition: opacity 2s ease-out;
+}
+
+
+.texto-fijo{
+    display: block;
+    opacity: 1;
+}
+
+
+.texto-cuadro-oculto{
+    display: none;
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+
+.cuadro-quieto{
+    width:100%;
+    -webkit-transition: width 2s, padding 2s; 
+    transition: width 2s, padding 2s; 
+}
+
+
+
+
+.cuadro-mueve{    
+    width: 100%;
+    padding: 10px;
+}
+
+#texto-4{
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+.well p{
+    text-align: justify;
+
+}
+
+.tapa{
+    margin-top: 40px;
+}
+
+footer{
+    text-align: center;
+    padding-left: 30px;
+}
+.peq-text{
+    margin-top: 40px;
+}
+
+/* quotes */
+.quote-container{
+    margin-bottom: 20px;
+}
+.quotes{
+    text-align: center;  
+    border-radius: 5px;
+    margin-bottom: 5px;  
+
+}
+
+.source{
+    font-style: italic;
+}
+.btn-default{
+    margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+    .titulo{
+        margin-top: 11px; 
+        margin-bottom: 0px;
+        font-size: 3em; 
+    }
+
+    .contenido{
+        width: 90%;
+
+    }
+
+    .tapa{
+        margin-top: 0px;
+    }
+
+
+    .peq-text{
+        display: none;
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+
+    .quotes{
+        margin-top: 6px;
+        padding: 0 76px 0 85px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .contenido{
+        width: 43%;
+
+    }
+
+}
+
+
